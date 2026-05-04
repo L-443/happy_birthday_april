@@ -104,7 +104,7 @@ class UIController {
         return `
             <div class="thank-you-container">
                 <div class="thank-you-content">
-                    <h2>感谢阅读</h2>
+                    <h2>by 小刘</h2>
                     <p>希望你天天开心</p>
                     <button class="reopen-btn" id="reopenBtn">重新打开</button>
                 </div>
@@ -310,7 +310,7 @@ function playBirthdaySound() {
 
 // 关闭按钮
 elements.closeBtn.addEventListener('click', () => {
-    if (confirm('确定要关闭这封信吗？')) {
+    if (confirm('press to close.')) {
         musicController.pause();
         UIController.showThankYou();
     }
@@ -345,7 +345,7 @@ function handleImageError() {
         if (container) {
             const errorHint = document.createElement('p');
             errorHint.className = 'qr-error';
-            errorHint.textContent = '💝 生日礼物正在准备中...';
+            errorHint.textContent = '20岁生日快乐！！！';
             errorHint.style.cssText = 'font-size: 18px; color: #FFD700; margin-top: 20px;';
             container.appendChild(errorHint);
         }
